@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal</title>
+  <style>
+    /* --- ESTILOS GENERALES --- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff5f5; /* Fondo rosado claro */
+      color: #4a0f0f; /* Texto rojizo oscuro */
+      line-height: 1.6;
+    }
+
+    header, nav, main, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #a60000; /* Título rojo fuerte */
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #a60000;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* --- FORMULARIO DE CONTACTO --- */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #a60000;
+      border-radius: 4px;
+      background-color: #ffe5e5; /* Fondo de campos */
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #a60000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #800000;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #800000;
+      border-top: 1px solid #a60000;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Mi Portafolio Personal</h1>
+    <p>Bienvenido a mi sitio web. Aquí comparto quién soy, lo que estudio y mis intereses.</p>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <a href="#sobremi">Sobre mí</a>
+    <a href="#universidad">Universidad y carrera</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#amigos">Amigos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Sección Sobre mí -->
+    <section id="sobremi">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy [Tu Nombre], una persona apasionada por la tecnología, el diseño y el aprendizaje constante. Este portafolio refleja mi camino académico y mis intereses personales.</p>
+    </section>
+
+    <!-- Sección Universidad y carrera -->
+    <section id="universidad">
+      <h2>Universidad y carrera</h2>
+      <p>Estudio en [Nombre de la Universidad], en la carrera de [Nombre de la Carrera]. Me interesa especialmente el desarrollo web, la experiencia de usuario y el impacto social de la tecnología.</p>
+    </section>
+
+    <!-- Sección Cursos -->
+    <section id="cursos">
+      <h2>Cursos que llevo</h2>
+      <ul>
+        <li>Introducción al desarrollo web</li>
+        <li>Diseño de interfaces</li>
+        <li>Programación en HTML y CSS</li>
+        <li>Usabilidad y accesibilidad</li>
+        <!-- Puedes agregar más cursos aquí -->
+      </ul>
+    </section>
+
+    <!-- Sección Amigos -->
+    <section id="amigos">
+      <h2>Enlaces a páginas de mis amigos</h2>
+      <ul>
+        <li><a href="https://ejemplo1.github.io" target="_blank">Portafolio de [Amigo 1]</a></li>
+        <li><a href="https://ejemplo2.github.io" target="_blank">Portafolio de [Amigo 2]</a></li>
+        <li><a href="https://ejemplo3.github.io" target="_blank">Portafolio de [Amigo 3]</a></li>
+        <!-- Reemplaza los enlaces y nombres -->
+      </ul>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+      <!-- NOTA: el formulario usa mailto:, funcional solo si el usuario tiene configurado un cliente de correo -->
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

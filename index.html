@@ -40,7 +40,11 @@
       text-decoration: underline;
     }
 
-    section {
+    .seccion {
+      background-color: #AF3E3E;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
       margin-bottom: 40px;
     }
 
@@ -82,12 +86,20 @@
       border-top: 1px solid #a60000;
       padding-top: 10px;
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
   <!-- ENCABEZADO -->
   <header>
+    <!-- Imagen de cabecera -->
+    <img src="banner pagina.png" alt="Imagen de estudio" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 12px;">
+
     <h1>Ariadna Morales Medina</h1>
     <p>Bienvenido a mi sitio web. Aquí comparto quién soy, lo que estudio y mis intereses.</p>
   </header>
@@ -104,28 +116,36 @@
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <!-- Sección Sobre mí -->
-    <section id="sobremi">
+    <section id="sobremi" class="seccion">
       <h2>Sobre mí</h2>
-      <p>Me llamo Ariadna Morales Medina, tengo 18 años y soy estudiante de la carrera de 
-        <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">Administración de Negocios</a> 
-        en la 
-        <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a>.
-      </p>
-      <p>Escogí estudiar Administración de Negocios porque me encanta entender cómo se mueve una empresa y cómo tomar buenas decisiones. Me llaman mucho las finanzas y el marketing porque mezclan estrategia con creatividad. En el futuro me veo liderando una empresa relacionada al rubro inmobiliario.</p>
+      <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+        <img src="WhatsApp Image 2025-06-21 at 8.43.58 PM.jpeg" alt="Ariadna Morales Medina" style="width: 180px; border-radius: 10px; object-fit: cover;">
+        <div style="flex: 1; min-width: 250px;">
+          <p>Me llamo Ariadna Morales Medina, tengo 18 años y soy estudiante de la carrera de 
+            <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" style="color: #ffe5e5;">Administración de Negocios</a> 
+            en la 
+            <a href="https://ucsp.edu.pe/" target="_blank" style="color: #ffe5e5;">Universidad Católica San Pablo</a>.
+          </p>
+          <p>Escogí estudiar Administración de Negocios porque me encanta entender cómo se mueve una empresa y cómo tomar buenas decisiones. Me llaman mucho las finanzas y el marketing porque mezclan estrategia con creatividad. En el futuro me veo liderando una empresa relacionada al rubro inmobiliario.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Sección Universidad y carrera -->
-    <section id="universidad">
+    <section id="universidad" class="seccion">
       <h2>Universidad y carrera</h2>
-      <p>Actualmente estudio en la 
-        <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a> 
-        la carrera de 
-        <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">Administración de Negocios</a>.
-      </p>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+        <img src="https://encuentro.pe/wp-content/uploads/2019/10/san-pablo-top-ten-ranking.jpg" alt="Universidad Católica San Pablo" style="width: 250px; border-radius: 10px;">
+        <p style="flex: 1; min-width: 250px;">Actualmente estudio en la 
+          <a href="https://ucsp.edu.pe/" target="_blank" style="color: #ffe5e5;">Universidad Católica San Pablo</a> 
+          la carrera de 
+          <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank" style="color: #ffe5e5;">Administración de Negocios</a>.
+        </p>
+      </div>
     </section>
 
     <!-- Sección Cursos -->
-    <section id="cursos">
+    <section id="cursos" class="seccion">
       <h2>Cursos que llevo y docentes</h2>
       <ul>
         <li>Comportamiento del consumidor – Miguel Salomón Valdivia</li>
@@ -140,19 +160,19 @@
     </section>
 
     <!-- Sección Amigos -->
-    <section id="amigos">
+    <section id="amigos" class="seccion">
       <h2>Enlaces a páginas de mis amigos</h2>
       <ul>
-        <li><a href="https://ejemplo1.github.io" target="_blank">Portafolio de [Amigo 1]</a></li>
-        <li><a href="https://ejemplo2.github.io" target="_blank">Portafolio de [Amigo 2]</a></li>
-        <li><a href="https://ejemplo3.github.io" target="_blank">Portafolio de [Amigo 3]</a></li>
+        <li><a href="https://ejemplo1.github.io" target="_blank" style="color: #ffe5e5;">Portafolio de [Amigo 1]</a></li>
+        <li><a href="https://ejemplo2.github.io" target="_blank" style="color: #ffe5e5;">Portafolio de [Amigo 2]</a></li>
+        <li><a href="https://ejemplo3.github.io" target="_blank" style="color: #ffe5e5;">Portafolio de [Amigo 3]</a></li>
       </ul>
     </section>
 
     <!-- Sección Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="seccion">
       <h2>Contacto</h2>
-      <p>E-mail: <a href="mailto:ariadna.indira.2006@gmail.com">ariadna.indira.2006@gmail.com</a></p>
+      <p>E-mail: <a href="mailto:ariadna.indira.2006@gmail.com" style="color: #ffe5e5;">ariadna.indira.2006@gmail.com</a></p>
       <form action="mailto:ariadna.indira.2006@gmail.com" method="post" enctype="text/plain">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
